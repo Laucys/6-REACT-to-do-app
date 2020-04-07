@@ -8,21 +8,21 @@ function App() {
 
   const [todos, setTodos] = useState ([
     { 
-      text: "Learn about React Hooks",
+      text: "Create CV",
       isCompleted: false
     },
     { 
-      text: "Toggle complete button",
+      text: "Prepare Github profile",
       isCompleted: false
     },
     { 
-      text: "Add and Delete tasks",
+      text: "Apply for a job",
       isCompleted: false
     }   
   ]);
 
   const addTodo = text => {
-    const newTodos = [...todos, { text }];
+    const newTodos = [...todos, { text, isCompleted: false }];
     setTodos(newTodos);
   };
 

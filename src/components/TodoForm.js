@@ -8,11 +8,13 @@ function TodoForm ({ addTodo }) {
         if (!value) return;
         addTodo(value);
         setValue("");
+        console.log(value);
       };
 
     const handleInput = e => {
         let input = e.target.value;
         setValue(input);
+        console.log(value);
     }
 
     return (
